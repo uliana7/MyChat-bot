@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1">
+
+  <category>
+    <pattern>ПРИВЕТ</pattern>
+    <template>Привет! <condition name="user-name"><li value="">Как тебя зовут?</li><li>Рада снова тебя видеть, <get name="user-name"/>!</li></condition></template>
+  </category>
+
+  <category>
+    <pattern>ПРИВЕТ *</pattern>
+    <template><srai>ПРИВЕТ</srai></template>
+  </category>
+
+  <category>
+    <pattern>/START</pattern>
+    <template><srai>ПРИВЕТ</srai></template>
+  </category>
+
+  <category>
+    <pattern>ЗДРАВСТВУЙ</pattern>
+    <template><srai>ПРИВЕТ</srai></template>
+  </category>
+
+  <category>
+    <pattern>МЕНЯ ЗОВУТ *</pattern>
+    <template><think><set name="user-name"><star/></set></think>Приятно познакомиться, <get name="user-name"/>!</template>
+  </category>
+
+  <category>
+    <pattern>МОЕ ИМЯ *</pattern>
+    <template><srai>МЕНЯ ЗОВУТ <star/></srai></template>
+  </category>
+
+  <category>
+    <pattern>КАК МЕНЯ ЗОВУТ</pattern>
+    <template><condition name="user-name"><li value="">Ты ещё не представился.</li><li>Тебя зовут <get name="user-name"/>.</li></condition></template>
+  </category>
+
+  <category>
+    <pattern>ЧТО ТЫ УМЕЕШЬ</pattern>
+    <template><condition name="user-name"><li value="">Я чат-бот по распознаванию образов. Я умею рассказывать про символы по уходу за одеждой.</li><li>Я чат-бот по распознаванию образов. Я умею рассказывать про символы по уходу за одеждой, <get name="user-name"/>.</li></condition></template>
+  </category>
+
+  <category>
+    <pattern>ЧТО ТЫ МОЖЕШЬ *</pattern>
+    <template><srai>ЧТО ТЫ УМЕЕШЬ</srai></template>
+  </category>
+
+  <category>
+    <pattern>ЧЕМ ТЫ ЗАНИМАЕШЬСЯ *</pattern>
+    <template><srai>ЧТО ТЫ УМЕЕШЬ</srai></template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ ПОДРОБНЕЕ</pattern>
+    <template><srai>КАКИЕ СИМВОЛЫ</srai></template>
+  </category>
+
+  <category>
+    <pattern>КАКИЕ СИМВОЛЫ</pattern>
+    <template>Нейросеть умеет распознавать базовые символы по уходу за одеждой: 1) символ стирки, 2) символ отбеливания, 3) символ глажки, 4) символ сушки, 5) символ химчистки.</template>
+  </category>
+
+  <category>
+    <pattern>КАКИЕ СИМВОЛЫ *</pattern>
+    <template><srai>КАКИЕ СИМВОЛЫ</srai></template>
+  </category>
+
+  <category>
+    <pattern>КАКИЕ СИМВОЛЫ ТЫ УМЕЕШЬ РАСПОЗНАВАТЬ</pattern>
+    <template><srai>КАКИЕ СИМВОЛЫ</srai></template>
+  </category>
+
+  <category>
+    <pattern>КАКИЕ СИМВОЛЫ ТЫ УМЕЕШЬ РАСПОЗНАВАТЬ *</pattern>
+    <template><srai>КАКИЕ СИМВОЛЫ</srai></template>
+  </category>
+
+  <category>
+    <pattern>КАКИЕ СИМВОЛЫ ТЫ ЗНАЕШЬ *</pattern>
+    <template><srai>КАКИЕ СИМВОЛЫ</srai></template>
+  </category>
+
+  <category>
+    <pattern>КАКИЕ СИМВОЛЫ ПО УХОДУ ЗА ОДЕЖДОЙ ТЫ РАСПОЗНАЕШЬ</pattern>
+    <template><srai>КАКИЕ СИМВОЛЫ</srai></template>
+  </category>
+
+  <category>
+    <pattern>КАКИЕ СИМВОЛЫ ПО УХОДУ ЗА ОДЕЖДОЙ ТЫ РАСПОЗНАЕШЬ *</pattern>
+    <template><srai>КАКИЕ СИМВОЛЫ</srai></template>
+  </category>
+
+  <category>
+    <pattern>* СИМВОЛЫ ПО УХОДУ ЗА ОДЕЖДОЙ *</pattern>
+    <template><srai>КАКИЕ СИМВОЛЫ</srai></template>
+  </category>
+
+  <category>
+    <pattern>КАКИЕ ОБРАЗЫ ТЫ УМЕЕШЬ РАСПОЗНАВАТЬ</pattern>
+    <template><srai>КАКИЕ СИМВОЛЫ</srai></template>
+  </category>
+
+  <category>
+    <pattern>КАКИЕ ОБРАЗЫ ТЫ УМЕЕШЬ РАСПОЗНАВАТЬ *</pattern>
+    <template><srai>КАКИЕ СИМВОЛЫ</srai></template>
+  </category>
+
+
+  <category>
+    <pattern>СИМВОЛ СТИРКИ</pattern>
+    <template><think><set name="last_object">WASH</set></think>Символ стирки — это тазик с водой. Он показывает, можно ли стирать вещь в машине и при какой температуре. Цифры внутри означают максимальную температуру воды.</template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ О СИМВОЛЕ СТИРКИ</pattern>
+    <template><srai>СИМВОЛ СТИРКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ ПРО СИМВОЛ СТИРКИ</pattern>
+    <template><srai>СИМВОЛ СТИРКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ ПРО СИМВОЛ СТИРКИ *</pattern>
+    <template><srai>СИМВОЛ СТИРКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>* СТИРКА *</pattern>
+    <template>Похоже, ты спрашиваешь про символ стирки. <srai>СИМВОЛ СТИРКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>СТИРКА</pattern>
+    <template><srai>СИМВОЛ СТИРКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>СИМВОЛ ОТБЕЛИВАНИЯ</pattern>
+    <template><think><set name="last_object">BLEACH</set></think>Символ отбеливания — треугольник. Пустой треугольник означает, что отбеливатель использовать можно, а перечёркнутый — что нельзя.</template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ О СИМВОЛЕ ОТБЕЛИВАНИЯ</pattern>
+    <template><srai>СИМВОЛ ОТБЕЛИВАНИЯ</srai></template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ ПРО СИМВОЛ ОТБЕЛИВАНИЯ</pattern>
+    <template><srai>СИМВОЛ ОТБЕЛИВАНИЯ</srai></template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ ПРО СИМВОЛ ОТБЕЛИВАНИЯ *</pattern>
+    <template><srai>СИМВОЛ ОТБЕЛИВАНИЯ</srai></template>
+  </category>
+
+  <category>
+    <pattern>* ОТБЕЛИВАНИЕ *</pattern>
+    <template>Похоже, речь о символе отбеливания. <srai>СИМВОЛ ОТБЕЛИВАНИЯ</srai></template>
+  </category>
+
+  <category>
+    <pattern>ОТБЕЛИВАНИЕ</pattern>
+    <template><srai>СИМВОЛ ОТБЕЛИВАНИЯ</srai></template>
+  </category>
+
+  <category>
+    <pattern>СИМВОЛ ГЛАЖКИ</pattern>
+    <template><think><set name="last_object">IRON</set></think>Символ глажки — утюг. Точки внутри показывают максимальную температуру подошвы утюга: одна точка — низкая, три точки — высокая.</template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ О СИМВОЛЕ ГЛАЖКИ</pattern>
+    <template><srai>СИМВОЛ ГЛАЖКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ ПРО СИМВОЛ ГЛАЖКИ</pattern>
+    <template><srai>СИМВОЛ ГЛАЖКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ ПРО СИМВОЛ ГЛАЖКИ *</pattern>
+    <template><srai>СИМВОЛ ГЛАЖКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>* ГЛАЖКА *</pattern>
+    <template>Похоже, ты спрашиваешь про символ глажки. <srai>СИМВОЛ ГЛАЖКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>ГЛАЖКА</pattern>
+    <template><srai>СИМВОЛ ГЛАЖКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>СИМВОЛ СУШКИ</pattern>
+    <template><think><set name="last_object">DRY</set></think>Символ сушки — квадрат. Внутри него могут быть линии или круг, показывающие способ сушки: машинная, на верёвке, горизонтальная и т.д.</template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ О СИМВОЛЕ СУШКИ</pattern>
+    <template><srai>СИМВОЛ СУШКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ ПРО СИМВОЛ СУШКИ</pattern>
+    <template><srai>СИМВОЛ СУШКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ ПРО СИМВОЛ СУШКИ *</pattern>
+    <template><srai>СИМВОЛ СУШКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>* СУШКА *</pattern>
+    <template>Похоже, речь о символе сушки. <srai>СИМВОЛ СУШКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>СУШКА</pattern>
+    <template><srai>СИМВОЛ СУШКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>СИМВОЛ ХИМЧИСТКИ</pattern>
+    <template><think><set name="last_object">DRYCLEAN</set></think>Символ химчистки — кружок. Буквы внутри круга показывают, какими растворителями можно обрабатывать ткань в химчистке.</template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ О СИМВОЛЕ ХИМЧИСТКИ</pattern>
+    <template><srai>СИМВОЛ ХИМЧИСТКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ ПРО СИМВОЛ ХИМЧИСТКИ</pattern>
+    <template><srai>СИМВОЛ ХИМЧИСТКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ ПРО СИМВОЛ ХИМЧИСТКИ *</pattern>
+    <template><srai>СИМВОЛ ХИМЧИСТКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>* ХИМЧИСТКА *</pattern>
+    <template>Похоже, ты спрашиваешь про символ химчистки. <srai>СИМВОЛ ХИМЧИСТКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>ХИМЧИСТКА</pattern>
+    <template><srai>СИМВОЛ ХИМЧИСТКИ</srai></template>
+  </category>
+
+  <category>
+    <pattern>ДОПОЛНИТЕЛЬНО О СИМВОЛЕ</pattern>
+    <template>
+      <condition name="last_object">
+        <li value="WASH">Интересный факт: первые стандартизированные символы стирки появились в Европе в 1960-х, когда массово стали продаваться автоматические стиральные машины.</li>
+        <li value="BLEACH">Интересный факт: треугольник выбран для отбеливателя, потому что ассоциируется со светом и осветлением ткани.</li>
+        <li value="IRON">Раньше утюги были чугунными и их грели на плите, но символ глажки почти не изменился и всё равно похож на классический утюг.</li>
+        <li value="DRY">Неправильная сушка может сильнее испортить одежду, чем стирка, поэтому для неё придумали отдельный набор символов.</li>
+        <li value="DRYCLEAN">Круг для химчистки говорит, что лучше не экспериментировать дома, а отдать вещь специалистам.</li>
+        <li>Мы ещё не выбрали конкретный символ. Сначала спроси, например: "Расскажи о символе стирки".</li>
+      </condition>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* ЕЩЕ * О НЕМ ЗНАЕШЬ *</pattern>
+    <template><srai>ДОПОЛНИТЕЛЬНО О СИМВОЛЕ</srai></template>
+  </category>
+
+  <category>
+    <pattern>* ЕЩЕ * ЗНАЕШЬ *</pattern>
+    <template><srai>ДОПОЛНИТЕЛЬНО О СИМВОЛЕ</srai></template>
+  </category>
+
+  <category>
+    <pattern>ЧТО ЕЩЕ ТЫ О НЕМ ЗНАЕШЬ</pattern>
+    <template><srai>ДОПОЛНИТЕЛЬНО О СИМВОЛЕ</srai></template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ ЕЩЕ ПРО НЕГО *</pattern>
+    <template><srai>ДОПОЛНИТЕЛЬНО О СИМВОЛЕ</srai></template>
+  </category>
+
+  <category>
+    <pattern>* О ЧЕМ МЫ РАЗГОВАРИВАЕМ *</pattern>
+    <template>
+      <condition name="last_object">
+        <li value="WASH">О символе стирки.</li>
+        <li value="BLEACH">О символе отбеливания.</li>
+        <li value="IRON">О символе глажки.</li>
+        <li value="DRY">О символе сушки.</li>
+        <li value="DRYCLEAN">О символе химчистки.</li>
+        <li>Пока ни о каком конкретном символе не разговариваем.</li>
+      </condition>
+    </template>
+  </category>
+
+  <category>
+    <pattern>СПАСИБО *</pattern>
+    <template><condition name="user-name"><li value="">Пожалуйста!</li><li>Пожалуйста, <get name="user-name"/>!</li></condition></template>
+  </category>
+
+  <category>
+    <pattern>ПОКА *</pattern>
+    <template><condition name="user-name"><li value="">Пока! Хорошего дня.</li><li>Пока, <get name="user-name"/>! Возвращайся, если будут вопросы.</li></condition></template>
+  </category>
+
+  <category>
+    <pattern>*</pattern>
+    <template>Я пока не знаю, как на это ответить. Попробуй спросить про символы стирки, отбеливания, глажки, сушки или химчистки.</template>
+  </category>
+
+</aiml>

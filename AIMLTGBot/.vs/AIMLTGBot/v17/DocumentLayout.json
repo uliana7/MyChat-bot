@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\AppData\\AIMLTGBot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4B74D3C4-6601-4B37-8275-C13DA3F50BE8}|AIMLTGBot.csproj|c:\\users\\appdata\\aimltgbot\\aiml\\mybot.aiml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4B74D3C4-6601-4B37-8275-C13DA3F50BE8}|AIMLTGBot.csproj|solutionrelative:aiml\\mybot.aiml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B74D3C4-6601-4B37-8275-C13DA3F50BE8}|AIMLTGBot.csproj|C:\\Users\\AppData\\AIMLTGBot\\tgtoken.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4B74D3C4-6601-4B37-8275-C13DA3F50BE8}|AIMLTGBot.csproj|solutionrelative:tgtoken.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B74D3C4-6601-4B37-8275-C13DA3F50BE8}|AIMLTGBot.csproj|C:\\Users\\AppData\\AIMLTGBot\\aimlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B74D3C4-6601-4B37-8275-C13DA3F50BE8}|AIMLTGBot.csproj|solutionrelative:aimlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B74D3C4-6601-4B37-8275-C13DA3F50BE8}|AIMLTGBot.csproj|C:\\Users\\AppData\\AIMLTGBot\\telegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B74D3C4-6601-4B37-8275-C13DA3F50BE8}|AIMLTGBot.csproj|solutionrelative:telegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B74D3C4-6601-4B37-8275-C13DA3F50BE8}|AIMLTGBot.csproj|C:\\Users\\AppData\\AIMLTGBot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B74D3C4-6601-4B37-8275-C13DA3F50BE8}|AIMLTGBot.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TGToken.txt",
+              "DocumentMoniker": "C:\\Users\\AppData\\AIMLTGBot\\TGToken.txt",
+              "RelativeDocumentMoniker": "TGToken.txt",
+              "ToolTip": "C:\\Users\\AppData\\AIMLTGBot\\TGToken.txt",
+              "RelativeToolTip": "TGToken.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-30T14:01:32.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AIMLService.cs",
+              "DocumentMoniker": "C:\\Users\\AppData\\AIMLTGBot\\AIMLService.cs",
+              "RelativeDocumentMoniker": "AIMLService.cs",
+              "ToolTip": "C:\\Users\\AppData\\AIMLTGBot\\AIMLService.cs",
+              "RelativeToolTip": "AIMLService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T14:00:51.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "myBot.aiml",
+              "DocumentMoniker": "C:\\Users\\AppData\\AIMLTGBot\\aiml\\myBot.aiml",
+              "RelativeDocumentMoniker": "aiml\\myBot.aiml",
+              "ToolTip": "C:\\Users\\AppData\\AIMLTGBot\\aiml\\myBot.aiml",
+              "RelativeToolTip": "aiml\\myBot.aiml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-30T13:59:22.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TelegramService.cs",
+              "DocumentMoniker": "C:\\Users\\AppData\\AIMLTGBot\\TelegramService.cs",
+              "RelativeDocumentMoniker": "TelegramService.cs",
+              "ToolTip": "C:\\Users\\AppData\\AIMLTGBot\\TelegramService.cs",
+              "RelativeToolTip": "TelegramService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T13:58:08.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\AppData\\AIMLTGBot\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\AppData\\AIMLTGBot\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T13:58:06.895Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
